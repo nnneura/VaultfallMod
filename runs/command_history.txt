@@ -1,0 +1,4 @@
+/reload
+/datapack
+/give Player106 vaultfall:engranaje_oxidado
+/reload
