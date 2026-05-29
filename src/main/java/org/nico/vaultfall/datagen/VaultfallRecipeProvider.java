@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import org.nico.vaultfall.block.ModBlocks;
 import org.nico.vaultfall.item.ModItems;
 
 
@@ -21,14 +22,23 @@ public class VaultfallRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.NUCLEO_PROPULSION)
+
+        ShapedRecipeJsonBuilder.create(
+                        RecipeCategory.MISC,
+                        ModItems.NUCLEO_PROPULSION
+                )
                 .pattern("RGR")
                 .pattern("GDG")
                 .pattern("RGR")
                 .input('R', Items.REDSTONE)
-                .input('G', ModItems.ENGRANAJE)
+                .input('G', ModBlocks.ENGRANAJE.asItem())
                 .input('D', Items.DIAMOND)
-                .criterion(RecipeProvider.hasItem(ModItems.ENGRANAJE), RecipeProvider.conditionsFromItem(ModItems.ENGRANAJE))
+
+                .criterion(
+                        RecipeProvider.hasItem(ModBlocks.ENGRANAJE.asItem()),
+                        RecipeProvider.conditionsFromItem(ModBlocks.ENGRANAJE.asItem())
+                )
+
                 .offerTo(exporter);
     }
 }

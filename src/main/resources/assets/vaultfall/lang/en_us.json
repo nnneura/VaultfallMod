@@ -1,6 +1,6 @@
 {
-  "block.vaultfall.engranaje_block": "Gear",
-  "block.vaultfall.engranaje_oxidado_block": "Rusty Gear",
+  "block.vaultfall.engranaje": "Gear",
+  "block.vaultfall.engranaje_oxidado": "Rusty Gear",
   "item.vaultfall.nucleo_propulsion": "Propulsion Core",
   "itemgroup.vaultfall.vaultfall_group": "Vaultfall"
 }

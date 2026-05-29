@@ -1,11 +1,9 @@
 package org.nico.vaultfall;
 
 import net.fabricmc.api.ModInitializer;
-
 import org.nico.vaultfall.block.ModBlocks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import net.fabricmc.api.ModInitializer;
 import org.nico.vaultfall.item.ModItems;
 import org.nico.vaultfall.item.ModItemGroups;
 
@@ -15,8 +13,8 @@ public class Vaultfall implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroups.registerItemGroups();
-		ModBlocks.registerModBlocks();
+		ModBlocks.registerModBlocks();      
 		ModItems.registerModItems();
+		ModItemGroups.registerItemGroups();
 	}
 }

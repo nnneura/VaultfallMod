@@ -16,15 +16,23 @@ public class VaultfallModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENGRANAJE_BLOCK);
-        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENGRANAJE_OXIDADO_BLOCK);
+        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENGRANAJE);
+        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENGRANAJE_OXIDADO);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        // Esta es la sintaxis real de Yarn para ítems planos:
+
         itemModelGenerator.register(ModItems.NUCLEO_PROPULSION, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ENGRANAJE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ENGRANAJE_OXIDADO, Models.GENERATED);
+
+        itemModelGenerator.register(
+                ModBlocks.ENGRANAJE.asItem(),
+                Models.GENERATED
+        );
+
+        itemModelGenerator.register(
+                ModBlocks.ENGRANAJE_OXIDADO.asItem(),
+                Models.GENERATED
+        );
     }
 }

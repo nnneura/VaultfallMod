@@ -1,10 +1,8 @@
 plugins {
-	// Pon la versión manualmente aquí, no uses una variable
 	id 'fabric-loom' version '1.8.13'
 	id 'maven-publish'
 }
 
-// Aquí sí puedes usar las variables para el resto de cosas:
 version = project.mod_version
 group = project.maven_group
 
@@ -12,18 +10,9 @@ base {
 	archivesName = project.archives_base_name
 }
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+
 }
 
-//fabricApi {
-//	configureDataGeneration {
-//		client = true
-//	}
-//}
 
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -48,9 +37,6 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 java {
-	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
-	// if it is present.
-	// If you remove this line, sources will not be generated.
 	withSourcesJar()
 
 	sourceCompatibility = JavaVersion.VERSION_21
@@ -74,17 +60,12 @@ publishing {
 		}
 	}
 
-	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
+
 	}
 }
 
 loom {
-	// Esto obliga a Loom a inyectar las dependencias de Minecraft en el proceso de compilación
 	runs {
 		client {
 			client()
@@ -98,8 +79,6 @@ loom {
 // Fuerza a que compileJava sepa dónde está todo.\gradlew clean
 tasks.withType(JavaCompile).configureEach {
 	options.fork = true
-	// Esto es un "hack" para asegurar que las dependencias de Loom se inyecten
-	// si el plugin está fallando en hacerlo automáticamente
 	doFirst {
 		options.compilerArgs += [
 				'-cp', configurations.compileClasspath.asPath
@@ -110,3 +89,4 @@ tasks.withType(JavaCompile).configureEach {
 fabricApi {
 	configureDataGeneration()
 }
+

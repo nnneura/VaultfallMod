@@ -7,23 +7,33 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import org.nico.vaultfall.block.ModBlocks;
 
 public class ModItemGroups {
 
     // Creamos tu pestaña personalizada "Vaultfall"
-    public static final ItemGroup VAULTFALL_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of("vaultfall", "vaultfall_group"),
-            FabricItemGroup.builder()
-                    .displayName(Text.translatable("itemgroup.vaultfall.vaultfall_group"))
-                    .icon(() -> new ItemStack(ModItems.ENGRANAJE)) // El ícono de la pestaña
-                    .entries((displayContext, entries) -> {
-                        // Aquí agregamos todos los ítems que aparecerán en la pestaña
-                        entries.add(ModItems.ENGRANAJE);
-                        entries.add(ModItems.ENGRANAJE_OXIDADO);
-                        entries.add(ModItems.NUCLEO_PROPULSION);
+    public static final ItemGroup VAULTFALL_GROUP =
+            Registry.register(
+                    Registries.ITEM_GROUP,
+                    Identifier.of("vaultfall", "vaultfall_group"),
 
-                    }).build());
+                    FabricItemGroup.builder()
+                            .displayName(Text.translatable("itemgroup.vaultfall.vaultfall_group"))
 
+                            .icon(() ->
+                                    new ItemStack(ModBlocks.ENGRANAJE)
+                            )
+
+                            .entries((displayContext, entries) -> {
+
+                                entries.add(ModBlocks.ENGRANAJE.asItem());
+                                entries.add(ModBlocks.ENGRANAJE_OXIDADO.asItem());
+                                entries.add(ModItems.NUCLEO_PROPULSION);
+
+                            })
+
+                            .build()
+            );
     public static void registerItemGroups() {
         // Método vacío solo para forzar a que la clase se cargue en la inicialización
     }

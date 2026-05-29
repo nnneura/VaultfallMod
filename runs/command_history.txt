@@ -2,3 +2,10 @@
 /datapack
 /give Player106 vaultfall:engranaje_oxidado
 /reload
+/difficulty peaceful
+/reload
+/data get entity @s SelectedItem
+/data get entity Player871 SelectedItem
+/loot give Player6 loot vaultfall:blocks/engranaje
+/loot give Player6 loot vaultfall:blocks/engranaje_oxidado
+/reload
