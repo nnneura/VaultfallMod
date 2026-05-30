@@ -19,6 +19,10 @@ public class ModItems {
             registerItem("selethilite",
                     new Item(new Item.Settings()));
 
+    public static final Item PROPULSOR =
+            registerItem("propulsor",
+                    new Item(new Item.Settings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(
                 Registries.ITEM,

@@ -1,5 +1,9 @@
-// 1.21.1	2026-05-29T23:58:09.5789312	Vaultfall/Recipes
+// 1.21.1	2026-05-30T10:22:20.8856788	Vaultfall/Recipes
 6d1ed6fb70746c2fb6aa24eca6d1941d0d5d23ea data\vaultfall\recipe\celula_energia.json
+f42c06d2b124378e4513f5489257c294d0c83e8e data\vaultfall\advancement\recipes\misc\selethilite_block.json
+6629864104d1c54d22cbba0ae93fc5ed7020d085 data\vaultfall\advancement\recipes\misc\propulsor.json
+230bd9e31d196d4e6edd3b1522863e124e7ecd86 data\vaultfall\recipe\propulsor.json
+c3a39a0f397e0efcd811a7921da3451a5f1329ac data\vaultfall\recipe\selethilite_block.json
 200c32f242798cf94ce905389f05329e6416b0a1 data\vaultfall\advancement\recipes\misc\nucleo_propulsion.json
 aca1c82ed53f21006ea198fba3682b8cce50ac8a data\vaultfall\recipe\nucleo_propulsion.json
 fb0ccdd22fa77b8b8a1c4d6598e0c3fd7a4e7657 data\vaultfall\advancement\recipes\misc\celula_energia.json

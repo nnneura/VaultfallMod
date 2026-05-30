@@ -52,5 +52,30 @@ public class VaultfallRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SELETHILITE), conditionsFromItem(ModItems.SELETHILITE))
 
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PROPULSOR, 1)
+                .pattern("ICI") //
+                .pattern("CNC") //
+                .pattern("IUI") //
+
+                .input('C', ModItems.CELULA_ENERGIA)
+                .input('N', ModItems.NUCLEO_PROPULSION)
+                .input('I', Items.IRON_INGOT)
+                .input('U', Items.COPPER_INGOT)
+
+                .criterion(hasItem(ModItems.CELULA_ENERGIA), conditionsFromItem(ModItems.CELULA_ENERGIA))
+
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SELETHILITE_BLOCK, 1)
+                .pattern("SSS") //
+                .pattern("SSS") //
+                .pattern("SSS") //
+
+                .input('S', ModItems.SELETHILITE)
+
+                .criterion(hasItem(ModItems.SELETHILITE), conditionsFromItem(ModItems.SELETHILITE))
+
+                .offerTo(exporter);
     }
 }

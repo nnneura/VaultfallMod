@@ -17,6 +17,7 @@ public class VaultfallModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SELETHILITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SELETHILITE_BLOCK);
     }
 
     @Override
@@ -25,6 +26,7 @@ public class VaultfallModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.NUCLEO_PROPULSION, Models.GENERATED);
         itemModelGenerator.register(ModItems.CELULA_ENERGIA, Models.GENERATED);
         itemModelGenerator.register(ModItems.SELETHILITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PROPULSOR, Models.GENERATED);
 
         itemModelGenerator.register(
                 ModBlocks.ENGRANAJE.asItem(),

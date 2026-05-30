@@ -1,9 +1,13 @@
-// 1.21.1	2026-05-29T23:58:09.5779309	Vaultfall/Model Definitions
+// 1.21.1	2026-05-30T10:22:20.8846778	Vaultfall/Model Definitions
 2fdbcc2de4909c28acf34406cbc4522189f02b04 assets\vaultfall\models\item\celula_energia.json
-3ea3816de5887a5e6c45da053b05c473d7980e2d assets\vaultfall\models\item\engranaje_oxidado.json
 e2b55888bb5afa8514f3fb1de451c6aa3ca8959a assets\vaultfall\models\item\engranaje.json
-db133132dfec963bb8839ccf60492e15f441b4bf assets\vaultfall\models\block\selethilite_ore.json
 760bf102f1b331cb291b2c3d749eb37f30e17a3e assets\vaultfall\models\item\selethilite.json
 d3f182c2a11c278356ef654b56ef18f44b75cc4d assets\vaultfall\models\item\nucleo_propulsion.json
+bb70cfb92366da26316d7b558319c7d645e6dad4 assets\vaultfall\models\item\selethilite_block.json
+7845af2223bd0d1beec78f0e454392a7fe3e9cd5 assets\vaultfall\blockstates\selethilite_block.json
+3ea3816de5887a5e6c45da053b05c473d7980e2d assets\vaultfall\models\item\engranaje_oxidado.json
+9968010fc594c5cb83099c2dd06f52c39bb045a6 assets\vaultfall\models\item\propulsor.json
+db133132dfec963bb8839ccf60492e15f441b4bf assets\vaultfall\models\block\selethilite_ore.json
 75a64265951916f5d0d51d32d520b6ceb914bc50 assets\vaultfall\models\item\selethilite_ore.json
 1f62559e091ede817a48eee643e15f17fedd88ce assets\vaultfall\blockstates\selethilite_ore.json
+0682045b06f8e5eafe0ef70af857229b471fc994 assets\vaultfall\models\block\selethilite_block.json

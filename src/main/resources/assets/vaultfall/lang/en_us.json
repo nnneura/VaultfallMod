@@ -2,8 +2,10 @@
   "block.vaultfall.engranaje": "Gear",
   "block.vaultfall.engranaje_oxidado": "Rusty Gear",
   "block.vaultfall.selethilite_ore": "Selethilite Ore",
+  "block.vaultfall.selethilite_block": "Selethilite Block",
   "item.vaultfall.nucleo_propulsion": "Propulsion Core",
-  "item.vaultfall.celula_energia": "Célula de energía",
+  "item.vaultfall.celula_energia": "Energy cell",
   "item.vaultfall.selethilite": "Selethilite",
+  "item.vaultfall.propulsor": "Propeller",
   "itemgroup.vaultfall.vaultfall_group": "Vaultfall"
 }

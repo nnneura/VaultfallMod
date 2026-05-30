@@ -23,6 +23,7 @@ public class VaultfallBlockLootTableProvider
 
         addDrop(ModBlocks.ENGRANAJE);
         addDrop(ModBlocks.ENGRANAJE_OXIDADO);
+        addDrop(ModBlocks.SELETHILITE_BLOCK);
         addDrop(ModBlocks.SELETHILITE_ORE, oreDrops(ModBlocks.SELETHILITE_ORE, ModItems.SELETHILITE));
     }
 }

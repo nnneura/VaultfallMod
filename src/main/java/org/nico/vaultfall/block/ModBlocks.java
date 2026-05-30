@@ -45,6 +45,16 @@ public class ModBlocks {
             )
     );
 
+    public static final Block SELETHILITE_BLOCK = registerBlock(
+            "selethilite_block",
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .requiresTool() // Requiere un pico para ser recuperado
+                            .strength(5.0f, 6.0f) // Dureza y resistencia idénticas al bloque de esmeralda
+                            .sounds(net.minecraft.sound.BlockSoundGroup.METAL) // Sonido metálico/cristalino al pisarlo o romperlo
+            )
+    );
+
     private static Block registerBlock(String name, Block block) {
 
         Registry.register(
