@@ -1,0 +1,33 @@
+{
+  "vaultfall:recipes/misc/nucleo_propulsion": {
+    "criteria": {
+      "has_engranaje": "2026-05-29 19:28:17 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_axe": "2026-05-29 19:28:38 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-05-29 19:27:50 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_axe": "2026-05-29 19:28:38 -0600"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-05-29 19:27:50 -0600"
+    },
+    "done": false
+  },
+  "DataVersion": 3955
+}
