@@ -11,6 +11,14 @@ public class ModItems {
             registerItem("nucleo_propulsion",
                     new Item(new Item.Settings()));
 
+    public static final Item CELULA_ENERGIA =
+            registerItem("celula_energia",
+                    new Item(new Item.Settings()));
+
+    public static final Item SELETHILITE =
+            registerItem("selethilite",
+                    new Item(new Item.Settings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(
                 Registries.ITEM,

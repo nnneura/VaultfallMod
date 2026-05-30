@@ -29,6 +29,10 @@ public class ModItemGroups {
                                 entries.add(ModBlocks.ENGRANAJE.asItem());
                                 entries.add(ModBlocks.ENGRANAJE_OXIDADO.asItem());
                                 entries.add(ModItems.NUCLEO_PROPULSION);
+                                entries.add(ModItems.CELULA_ENERGIA);
+                                entries.add(ModItems.SELETHILITE);
+                                entries.add(ModBlocks.SELETHILITE_ORE.asItem());
+
 
                             })
 

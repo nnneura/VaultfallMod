@@ -36,6 +36,15 @@ public class ModBlocks {
             )
     );
 
+    public static final Block SELETHILITE_ORE = registerBlock(
+            "selethilite_ore",
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .requiresTool() // ¡Ojo! Este sí requiere herramienta por ser un mineral duro
+                            .strength(3.0f, 3.0f) // Dureza idéntica al mineral de hierro vanilla
+            )
+    );
+
     private static Block registerBlock(String name, Block block) {
 
         Registry.register(
