@@ -1,3 +1,4 @@
-// 1.21.1	2026-05-30T10:22:20.8866798	Vaultfall/Tags for minecraft:block
-8a8fa56d5447c534ea8eb59e88975104dc4d5269 data\minecraft\tags\block\mineable\pickaxe.json
-8a8fa56d5447c534ea8eb59e88975104dc4d5269 data\minecraft\tags\block\needs_iron_tool.json
+// 1.21.1	2026-06-01T01:00:26.9407861	Vaultfall/Tags for minecraft:block
+24ebc3d5b3b642c37ab498f31e88c7a9a818d7d0 data\minecraft\tags\block\mineable\pickaxe.json
+e800c859a1433436636397bbb5a35b596f2edd3b data\minecraft\tags\block\needs_diamond_tool.json
+4a0e077d2df73a429c26f5dd65bc26dd79c986d0 data\minecraft\tags\block\needs_iron_tool.json

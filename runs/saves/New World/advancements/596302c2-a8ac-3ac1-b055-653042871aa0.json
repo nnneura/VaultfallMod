@@ -1,0 +1,51 @@
+{
+  "vaultfall:recipes/misc/nucleo_propulsion": {
+    "criteria": {
+      "has_engranaje": "2026-06-01 00:55:55 -0600"
+    },
+    "done": true
+  },
+  "vaultfall:recipes/misc/selethilite_block": {
+    "criteria": {
+      "has_selethilite": "2026-06-01 00:55:55 -0600"
+    },
+    "done": true
+  },
+  "vaultfall:recipes/misc/celula_energia": {
+    "criteria": {
+      "has_selethilite": "2026-06-01 00:55:55 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-06-01 00:55:55 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-06-01 00:55:55 -0600"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-06-01 00:55:55 -0600"
+    },
+    "done": false
+  },
+  "vaultfall:recipes/misc/propulsor": {
+    "criteria": {
+      "has_celula_energia": "2026-06-01 00:55:55 -0600"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2026-06-01 00:55:55 -0600"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

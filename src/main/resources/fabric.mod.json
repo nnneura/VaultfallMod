@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"org.nico.vaultfall.VaultfallDataGenerator"
+		],
+		"client": [
+			"org.nico.vaultfall.client.VaultfallClient"
 		]
 	},
 	"mixins": [

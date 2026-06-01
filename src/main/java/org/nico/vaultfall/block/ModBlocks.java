@@ -3,6 +3,7 @@ package org.nico.vaultfall.block;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -45,6 +46,15 @@ public class ModBlocks {
             )
     );
 
+    public static final Block DEEPSLATE_SELETHILITE_ORE = registerBlock(
+            "deepslate_selethilite_ore",
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .requiresTool() // ¡Ojo! Este sí requiere herramienta por ser un mineral duro
+                            .strength(6.0f, 6.0f)
+            )
+    );
+
     public static final Block SELETHILITE_BLOCK = registerBlock(
             "selethilite_block",
             new Block(
@@ -52,6 +62,45 @@ public class ModBlocks {
                             .requiresTool() // Requiere un pico para ser recuperado
                             .strength(5.0f, 6.0f) // Dureza y resistencia idénticas al bloque de esmeralda
                             .sounds(net.minecraft.sound.BlockSoundGroup.METAL) // Sonido metálico/cristalino al pisarlo o romperlo
+            )
+    );
+
+    public static final Block RUSTY_REINFORCED_STEEL_BLOCK = registerBlock(
+            "rusty_reinforced_steel_block",
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .requiresTool() // Requiere un pico para ser recuperado
+                            .strength(1000.0f, 10500.0f) // Dureza y resistencia idénticas al bloque de esmeralda
+                            .sounds(net.minecraft.sound.BlockSoundGroup.METAL) // Sonido metálico/cristalino al pisarlo o romperlo
+            )
+    );
+
+    public static final Block REINFORCED_STEEL_BLOCK = registerBlock(
+            "reinforced_steel_block",
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .requiresTool() // Requiere un pico para ser recuperado
+                            .strength(1000.0f, 10500.0f) // Dureza y resistencia idénticas al bloque de esmeralda
+                            .sounds(net.minecraft.sound.BlockSoundGroup.METAL) // Sonido metálico/cristalino al pisarlo o romperlo
+            )
+    );
+
+    public static final Block VIGA_ACERO = registerBlock(
+            "viga_acero",
+            new PillarBlock(
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .strength(10.0f, 20.0f)
+                            .sounds(net.minecraft.sound.BlockSoundGroup.NETHERITE)
+            )
+    );
+
+    public static final Block LAMPARA_SELETHILITE = registerBlock("lampara_selethilite",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(3.5f, 3.5f)
+                    .luminance(state -> 15) // Luz máxima
+                    .sounds(BlockSoundGroup.NETHERITE)
             )
     );
 

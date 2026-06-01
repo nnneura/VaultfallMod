@@ -9,3 +9,10 @@
 /loot give Player6 loot vaultfall:blocks/engranaje
 /loot give Player6 loot vaultfall:blocks/engranaje_oxidado
 /reload
+/give Player314 minecraft:diamond_pickaxe
+/enchant Player314 minecraft:efficiency 5
+/time set day
+/effect give Player168 minecraft:haste 120 2
+/give Player788 vaultfall:lampara_selethilite
+/time set night
+/reload

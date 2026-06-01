@@ -29,7 +29,12 @@ public class ModItemGroups {
                                 entries.add(ModBlocks.ENGRANAJE.asItem());
                                 entries.add(ModBlocks.ENGRANAJE_OXIDADO.asItem());
                                 entries.add(ModBlocks.SELETHILITE_ORE.asItem());
+                                entries.add(ModBlocks.DEEPSLATE_SELETHILITE_ORE.asItem());
                                 entries.add(ModBlocks.SELETHILITE_BLOCK.asItem());
+                                entries.add(ModBlocks.RUSTY_REINFORCED_STEEL_BLOCK.asItem());
+                                entries.add(ModBlocks.REINFORCED_STEEL_BLOCK.asItem());
+                                entries.add(ModBlocks.VIGA_ACERO.asItem());
+                                entries.add(ModBlocks.LAMPARA_SELETHILITE.asItem());
                                 entries.add(ModItems.NUCLEO_PROPULSION);
                                 entries.add(ModItems.CELULA_ENERGIA);
                                 entries.add(ModItems.SELETHILITE);
