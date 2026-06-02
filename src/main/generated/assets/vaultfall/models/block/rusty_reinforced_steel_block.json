@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "vaultfall:block/rusty_reinforced_steel_block"
-  }
-}

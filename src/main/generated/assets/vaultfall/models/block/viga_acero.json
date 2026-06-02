@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "vaultfall:block/viga_acero_top",
-    "side": "vaultfall:block/viga_acero"
-  }
-}
