@@ -16,3 +16,7 @@
 /give Player788 vaultfall:lampara_selethilite
 /time set night
 /reload
+/enchant Player365 minecraft:sharpness 5
+/difficulty hard
+/difficulty peaceful
+/difficulty hard

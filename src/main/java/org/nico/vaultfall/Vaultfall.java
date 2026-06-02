@@ -2,6 +2,7 @@ package org.nico.vaultfall;
 
 import net.fabricmc.api.ModInitializer;
 import org.nico.vaultfall.block.ModBlocks;
+import org.nico.vaultfall.item.ModToolMaterials;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.nico.vaultfall.item.ModItems;

@@ -35,10 +35,21 @@ public class ModItemGroups {
                                 entries.add(ModBlocks.REINFORCED_STEEL_BLOCK.asItem());
                                 entries.add(ModBlocks.VIGA_ACERO.asItem());
                                 entries.add(ModBlocks.LAMPARA_SELETHILITE.asItem());
+                                entries.add(ModBlocks.REJILLA_ACERO.asItem());
                                 entries.add(ModItems.NUCLEO_PROPULSION);
                                 entries.add(ModItems.CELULA_ENERGIA);
                                 entries.add(ModItems.SELETHILITE);
                                 entries.add(ModItems.PROPULSOR);
+                                entries.add(ModItems.POLVO_ACERO);
+                                entries.add(ModItems.LINGOTE_ACERO);
+                                entries.add(ModItems.ESPADA_MECANICA_BASE);
+                                entries.add(ModItems.MANGO_ACERO);
+                                entries.add(ModItems.HOJA_ACERO);
+                                entries.add(ModItems.BARRA_ACERO);
+                                entries.add(ModItems.MECHANICAL_SWORD_UPGRADE_COMPONENT);
+                                entries.add(ModItems.ESPADA_MECANICA_MEJORADA);
+                                entries.add(ModItems.PLANTILLA_SELETHILITE);
+
 
 
                             })

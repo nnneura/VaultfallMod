@@ -65,6 +65,18 @@ public class ModBlocks {
             )
     );
 
+    public static final Block REJILLA_ACERO = registerBlock(
+            "rejilla_acero",
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .strength(8.0f, 15.0f)
+                            .sounds(BlockSoundGroup.COPPER_GRATE)
+                            .nonOpaque()
+                            .blockVision((state, world, pos) -> false)
+            )
+    );
+
     public static final Block RUSTY_REINFORCED_STEEL_BLOCK = registerBlock(
             "rusty_reinforced_steel_block",
             new Block(

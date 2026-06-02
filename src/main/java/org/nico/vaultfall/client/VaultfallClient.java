@@ -9,7 +9,7 @@ public class VaultfallClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         // Le decimos al motor gráfico que renderice los huecos transparentes de estos bloques
-        //BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.REJILLA_ACERO, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.REJILLA_ACERO, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LAMPARA_SELETHILITE, RenderLayer.getCutout());
     }
 }

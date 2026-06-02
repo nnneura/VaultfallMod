@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_barra_acero": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vaultfall:barra_acero"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vaultfall:mango_acero"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_barra_acero"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vaultfall:mango_acero"
+    ]
+  }
+}

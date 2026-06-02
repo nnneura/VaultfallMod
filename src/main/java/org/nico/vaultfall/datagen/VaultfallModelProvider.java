@@ -20,6 +20,7 @@ public class VaultfallModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SELETHILITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUSTY_REINFORCED_STEEL_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REINFORCED_STEEL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REJILLA_ACERO);
         TextureMap vigaTexturas = new TextureMap()
                 .put(TextureKey.SIDE, Identifier.of("vaultfall", "block/viga_acero"))
                 .put(TextureKey.END, Identifier.of("vaultfall", "block/viga_acero_top"));
@@ -45,8 +46,6 @@ public class VaultfallModelProvider extends FabricModelProvider {
                         )
                 )
         );
-
-        // 2. NUEVO: Le ordena al Datagen crear el JSON del ítem de forma automática y limpia
         blockStateModelGenerator.registerParentedItemModel(
                 ModBlocks.LAMPARA_SELETHILITE,
                 Identifier.of("vaultfall", "block/lampara_selethilite")
@@ -60,6 +59,17 @@ public class VaultfallModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CELULA_ENERGIA, Models.GENERATED);
         itemModelGenerator.register(ModItems.SELETHILITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PROPULSOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POLVO_ACERO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LINGOTE_ACERO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ESPADA_MECANICA_BASE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.HOJA_ACERO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BARRA_ACERO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANGO_ACERO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MECHANICAL_SWORD_UPGRADE_COMPONENT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ESPADA_MECANICA_MEJORADA, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLANTILLA_SELETHILITE, Models.GENERATED);
+
+
 
         itemModelGenerator.register(
                 ModBlocks.ENGRANAJE.asItem(),

@@ -11,12 +11,15 @@
     "N": {
       "item": "vaultfall:nucleo_propulsion"
     },
+    "T": {
+      "item": "vaultfall:lingote_acero"
+    },
     "U": {
       "item": "minecraft:copper_ingot"
     }
   },
   "pattern": [
-    "ICI",
+    "TCT",
     "CNC",
     "IUI"
   ],

@@ -22,6 +22,7 @@ public class VaultfallBlockTagProvider extends FabricTagProvider.BlockTagProvide
                 .add(ModBlocks.SELETHILITE_BLOCK)
                 .add(ModBlocks.REINFORCED_STEEL_BLOCK)
                 .add(ModBlocks.VIGA_ACERO)
+                .add(ModBlocks.REJILLA_ACERO)
                 .add(ModBlocks.RUSTY_REINFORCED_STEEL_BLOCK);
 
 
@@ -31,6 +32,7 @@ public class VaultfallBlockTagProvider extends FabricTagProvider.BlockTagProvide
                 .add(ModBlocks.SELETHILITE_ORE)
                 .add(ModBlocks.DEEPSLATE_SELETHILITE_ORE)
                 .add(ModBlocks.VIGA_ACERO)
+                .add(ModBlocks.REJILLA_ACERO)
                 .add(ModBlocks.SELETHILITE_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)

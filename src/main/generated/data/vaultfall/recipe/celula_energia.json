@@ -7,12 +7,15 @@
     },
     "S": {
       "item": "vaultfall:selethilite"
+    },
+    "T": {
+      "item": "vaultfall:lingote_acero"
     }
   },
   "pattern": [
-    "III",
+    "ITI",
     "SSS",
-    "III"
+    "ITI"
   ],
   "result": {
     "count": 1,

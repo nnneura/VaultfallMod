@@ -27,6 +27,7 @@ public class VaultfallBlockLootTableProvider
         addDrop(ModBlocks.REINFORCED_STEEL_BLOCK);
         addDrop(ModBlocks.RUSTY_REINFORCED_STEEL_BLOCK);
         addDrop(ModBlocks.VIGA_ACERO);
+        addDrop(ModBlocks.REJILLA_ACERO);
         addDrop(ModBlocks.SELETHILITE_ORE, oreDrops(ModBlocks.SELETHILITE_ORE, ModItems.SELETHILITE));
         addDrop(ModBlocks.DEEPSLATE_SELETHILITE_ORE, oreDrops(ModBlocks.DEEPSLATE_SELETHILITE_ORE, ModItems.SELETHILITE));
     }
