@@ -3,7 +3,7 @@
 	"package": "org.nico.vaultfall.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"EspadaMecanicaMejoradaMixin"
+		"PasivasEspadasMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

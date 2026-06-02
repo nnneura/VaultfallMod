@@ -10,6 +10,8 @@
   "block.vaultfall.rejilla_acero": "Steel Grate",
   "block.vaultfall.lampara_selethilite": "Selethilite Lamp",
   "item.vaultfall.nucleo_propulsion": "Propulsion Core",
+  "item.vaultfall.nucleo_selethilita": "Selethilite Core",
+  "item.vaultfall.selethilite_upgrade_component": "Selethilite Upgrade Component",
   "item.vaultfall.celula_energia": "Energy cell",
   "item.vaultfall.selethilite": "Selethilite",
   "item.vaultfall.propulsor": "Propeller",
@@ -22,5 +24,6 @@
   "item.vaultfall.mechanical_sword_upgrade_component": "Mechanical Sword Upgrade Component",
   "item.vaultfall.plantilla_selethilite": "Selethilite Smithing Template",
   "item.vaultfall.espada_mecanica_mejorada": "Upgraded Mechanical Sword",
+  "item.vaultfall.espada_mecanica_selethilite": "Selethilite Mechanical Sword",
   "itemgroup.vaultfall.vaultfall_group": "Vaultfall"
 }

@@ -20,3 +20,9 @@
 /difficulty hard
 /difficulty peaceful
 /difficulty hard
+/effect give Player968 vaultfall:paralisis
+/effect clear
+/effect give Player968 vaultfall:estatica 10
+/recipe give Player985 *
+/time set day
+/difficulty peaceful

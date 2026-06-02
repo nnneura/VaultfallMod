@@ -32,16 +32,56 @@ public class VaultfallRecipeProvider extends FabricRecipeProvider {
                         RecipeCategory.MISC,
                         ModItems.NUCLEO_PROPULSION
                 )
-                .pattern("RGR")
+                .pattern("RSR")
                 .pattern("GDG")
-                .pattern("RGR")
+                .pattern("RSR")
                 .input('R', Items.REDSTONE)
                 .input('G', ModBlocks.ENGRANAJE.asItem())
                 .input('D', Items.DIAMOND)
+                .input('S', ModItems.LINGOTE_ACERO)
+
 
                 .criterion(
                         RecipeProvider.hasItem(ModBlocks.ENGRANAJE.asItem()),
                         RecipeProvider.conditionsFromItem(ModBlocks.ENGRANAJE.asItem())
+                )
+
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(
+                        RecipeCategory.MISC,
+                        ModItems.NUCLEO_SELETHILITA
+                )
+                .pattern("ACA")
+                .pattern("CSC")
+                .pattern("ACA")
+                .input('A', ModItems.LINGOTE_ACERO)
+                .input('S', ModItems.SELETHILITE)
+                .input('C', ModItems.CELULA_ENERGIA)
+
+
+                .criterion(
+                        RecipeProvider.hasItem(ModItems.CELULA_ENERGIA),
+                        RecipeProvider.conditionsFromItem(ModItems.CELULA_ENERGIA)
+                )
+
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(
+                        RecipeCategory.MISC,
+                        ModItems.SELETHILITE_UPGRADE_COMPONENT
+                )
+                .pattern("ACA")
+                .pattern("NBN")
+                .pattern("ACA")
+                .input('A', Items.NETHERITE_INGOT)
+                .input('N', ModItems.NUCLEO_SELETHILITA)
+                .input('C', ModItems.CELULA_ENERGIA)
+                .input('B', ModItems.HOJA_ACERO)
+
+                .criterion(
+                        RecipeProvider.hasItem(ModItems.NUCLEO_SELETHILITA),
+                        RecipeProvider.conditionsFromItem(ModItems.NUCLEO_SELETHILITA)
                 )
 
                 .offerTo(exporter);
@@ -189,5 +229,15 @@ public class VaultfallRecipeProvider extends FabricRecipeProvider {
                 )
                 .criterion(hasItem(ModItems.MECHANICAL_SWORD_UPGRADE_COMPONENT), conditionsFromItem(ModItems.MECHANICAL_SWORD_UPGRADE_COMPONENT))
                 .offerTo(exporter, net.minecraft.util.Identifier.of("vaultfall", "upgraded_mechanical_sword_smithing"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.PLANTILLA_SELETHILITE),
+                        Ingredient.ofItems(ModItems.ESPADA_MECANICA_MEJORADA),
+                        Ingredient.ofItems(ModItems.SELETHILITE_UPGRADE_COMPONENT),
+                        RecipeCategory.COMBAT,
+                        ModItems.ESPADA_MECANICA_SELETHILITE
+                )
+                .criterion(hasItem(ModItems.SELETHILITE_UPGRADE_COMPONENT), conditionsFromItem(ModItems.SELETHILITE_UPGRADE_COMPONENT))
+                .offerTo(exporter, net.minecraft.util.Identifier.of("vaultfall", "mechanical_selethilite_sword_smithing"));
     }
 }

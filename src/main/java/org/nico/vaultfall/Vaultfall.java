@@ -2,6 +2,7 @@ package org.nico.vaultfall;
 
 import net.fabricmc.api.ModInitializer;
 import org.nico.vaultfall.block.ModBlocks;
+import org.nico.vaultfall.effect.ModEffects;
 import org.nico.vaultfall.item.ModToolMaterials;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,5 +18,6 @@ public class Vaultfall implements ModInitializer {
 		ModBlocks.registerModBlocks();      
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
+		ModEffects.registerEffects();
 	}
 }

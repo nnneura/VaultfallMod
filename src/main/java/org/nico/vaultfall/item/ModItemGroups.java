@@ -48,7 +48,10 @@ public class ModItemGroups {
                                 entries.add(ModItems.BARRA_ACERO);
                                 entries.add(ModItems.MECHANICAL_SWORD_UPGRADE_COMPONENT);
                                 entries.add(ModItems.ESPADA_MECANICA_MEJORADA);
+                                entries.add(ModItems.ESPADA_MECANICA_SELETHILITE);
                                 entries.add(ModItems.PLANTILLA_SELETHILITE);
+                                entries.add(ModItems.NUCLEO_SELETHILITA);
+                                entries.add(ModItems.SELETHILITE_UPGRADE_COMPONENT);
 
 
 

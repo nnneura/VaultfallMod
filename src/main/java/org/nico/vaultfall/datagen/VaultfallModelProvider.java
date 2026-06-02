@@ -67,7 +67,10 @@ public class VaultfallModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MANGO_ACERO, Models.GENERATED);
         itemModelGenerator.register(ModItems.MECHANICAL_SWORD_UPGRADE_COMPONENT, Models.GENERATED);
         itemModelGenerator.register(ModItems.ESPADA_MECANICA_MEJORADA, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ESPADA_MECANICA_SELETHILITE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PLANTILLA_SELETHILITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NUCLEO_SELETHILITA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SELETHILITE_UPGRADE_COMPONENT, Models.GENERATED);
 
 
 
