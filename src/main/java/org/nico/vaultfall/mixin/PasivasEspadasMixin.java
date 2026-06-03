@@ -131,8 +131,22 @@ public class PasivasEspadasMixin {
         List<LivingEntity> enemigosCercanos = world.getEntitiesByClass(LivingEntity.class, areaAtaque,
                 entity -> entity != player && entity != mainTarget && !player.isTeammate(entity));
 
-        // BALANCE: Si es Selethilite el barrido secundario hace 70% de daño, si es Mecánica hace el 100%
-        float baseDamageSecundario = tieneSelethilite ? amount * 0.70f : amount;
+        // ---------------------------------------------------------
+        // INTEGRACIÓN DE FILO ARRASADOR (SWEEPING EDGE) EN 1.21.1
+        // ---------------------------------------------------------
+        // ratioBarrido será 0.0 (Sin encantar) hasta 0.75 (Nivel III)
+        float ratioBarrido = (float) player.getAttributeValue(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO);
+
+        // Base: 70% para Selethilite, 100% para Mecánica
+        float multiplicadorBase = tieneSelethilite ? 0.70f : 1.0f;
+
+        // Sumamos el beneficio del encantamiento.
+        // Multiplicado por 0.4 para balancearlo: con Nivel 3 (0.75 * 0.4 = 0.30)
+        // La Selethilite sube de 0.70 a 1.00 (recupera el daño total).
+        // La Mecánica sube de 1.00 a 1.30 (se vuelve una locura para limpiar hordas).
+        float multiplicadorFinal = multiplicadorBase + (ratioBarrido * 0.4f);
+
+        float baseDamageSecundario = amount * multiplicadorFinal;
 
         for (LivingEntity enemigo : enemigosCercanos) {
             float danioFinalSecundario = baseDamageSecundario;
@@ -202,7 +216,7 @@ public class PasivasEspadasMixin {
                 jugadorEnemigo.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20, 2, false, false, true));
             } else {
                 target.addStatusEffect(new StatusEffectInstance(
-                        ModEffects.PARALISIS_ENTRY, 20, 0, false, false, false
+                        ModEffects.PARALISIS_ENTRY, 30, 0, false, false, false
                 ));
             }
         }

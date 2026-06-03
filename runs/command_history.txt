@@ -1,9 +1,4 @@
 /reload
-/datapack
-/give Player106 vaultfall:engranaje_oxidado
-/reload
-/difficulty peaceful
-/reload
 /data get entity @s SelectedItem
 /data get entity Player871 SelectedItem
 /loot give Player6 loot vaultfall:blocks/engranaje
@@ -26,3 +21,30 @@
 /recipe give Player985 *
 /time set day
 /difficulty peaceful
+/effect give Player42 minecraft:absorption infinite 50
+/difficulty hard
+/summon minecraft:iron_golem ~ ~ ~
+/summon minecraft:iron_golem ~ ~ ~ 20
+/enchant Player279 minecraft:sweeping_edge
+/enchant Player279 minecraft:sharpness
+/enchant Player10 minecraft:sharpness
+/enchant Player10 minecraft:sharpness 4
+/enchant Player863 minecraft:sharpness 4
+/enchant Player526 minecraft:sharpness 4
+/enchant Player769 minecraft:sharpness 4
+/enchant Player769 minecraft:sharpness 5
+/enchant Player769 minecraft:sweeping_edge 3
+/time set day
+/difficulty peaceful
+/enchant Player769 minecraft:sharpness 5
+/enchant Player323 minecraft:sharpness 5
+/enchant Player178 minecraft:sharpness 5
+/summon zombie ~ ~1 ~ {HandItems:[{Count:1,id:"minecraft:totem_of_undying",Count:127},{}],ArmorItems:[{Count:1,id:netherite_boots,tag:{Enchantments:[{id:protection,lvl:4}]}},{Count:1,id:netherite_leggings,tag:{Enchantments:[{id:blastprotection,lvl:4}]}},{C
+/summon zombie ~ ~ ~ {Tags:["totem"],ArmorItems:[{id:"netherite_boots",components:{"enchantments":{levels:{"protection":4,"unbreaking":3}}}},{id:"netherite_leggings",components:{"enchantments":{levels:{"protection":4,"unbreaking":3}}}},{id:"netherite_chest
+/summon zombie ~ ~ ~ {ArmorItems:[{id:"netherite_boots",Count:1b,tag:{Enchantments:[{id:"protection",lvl:4s}]}},{id:"netherite_leggings",Count:1b,tag:{Enchantments:[{id:"protection",lvl:4s}]}},{id:"netherite_chestplate",Count:1b,tag:{Enchantments:[{id:"pro
+/give Player178 minecraft:command_block
+/difficulty hard
+/attribute @p minecraft:generic.attack_damage get
+/summon minecraft:giant
+/summon minecraft:giant}
+/summon minecraft:giant

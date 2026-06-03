@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "B": {
+      "item": "vaultfall:hoja_acero"
+    },
+    "C": {
+      "item": "vaultfall:celula_energia"
+    },
+    "N": {
+      "item": "vaultfall:nucleo_selethilita"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "NBN",
+    "ACA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vaultfall:selethilite_upgrade_component"
+  }
+}

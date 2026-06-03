@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "vaultfall:barra_acero"
+    },
+    "G": {
+      "item": "vaultfall:engranaje"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "   ",
+    "RG ",
+    "BR "
+  ],
+  "result": {
+    "count": 1,
+    "id": "vaultfall:mango_acero"
+  }
+}

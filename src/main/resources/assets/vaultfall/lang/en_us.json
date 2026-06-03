@@ -25,5 +25,20 @@
   "item.vaultfall.plantilla_selethilite": "Selethilite Smithing Template",
   "item.vaultfall.espada_mecanica_mejorada": "Upgraded Mechanical Sword",
   "item.vaultfall.espada_mecanica_selethilite": "Selethilite Mechanical Sword",
+
+  "tooltip.vaultfall.espada_mecanica_base.line1": "A precision-engineered steel blade.",
+  "tooltip.vaultfall.espada_mecanica_base.line2": "Sharp, reliable, and unadorned.",
+
+  "tooltip.vaultfall.espada_mecanica_mejorada.line1": "Harnesses kinetic energy to dominate the battlefield.",
+  "tooltip.vaultfall.espada_mecanica_mejorada.line2": "§b• 30% Armor Penetration",
+  "tooltip.vaultfall.espada_mecanica_mejorada.line3": "§b• Sweeping strikes deal 100% damage",
+  "tooltip.vaultfall.espada_mecanica_mejorada.line4": "§b• Kinetic Vortex: Pulls enemies to the center.",
+
+  "tooltip.vaultfall.espada_selethilite.line1": "The pinnacle of electrified steel. Inherits all previous enhancements.",
+  "tooltip.vaultfall.espada_selethilite.line2": "§b• Strikes build 'Static' (Max 4 stacks).",
+  "tooltip.vaultfall.espada_selethilite.line3": "§b• 4 Stacks: Discharges a stun burst (1s).",
+  "tooltip.vaultfall.espada_selethilite.line4": "§b• Applies 'Electrified' (+15% damage taken).",
+  "tooltip.vaultfall.espada_selethilite.line5": "§8(Static cannot stack while Electrified is active)",
+
   "itemgroup.vaultfall.vaultfall_group": "Vaultfall"
 }

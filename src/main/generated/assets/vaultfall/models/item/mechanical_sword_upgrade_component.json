@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "vaultfall:item/mechanical_sword_upgrade_component"
+  }
+}

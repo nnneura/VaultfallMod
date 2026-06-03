@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_celula_energia": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vaultfall:celula_energia"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vaultfall:nucleo_selethilita"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_celula_energia"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vaultfall:nucleo_selethilita"
+    ]
+  }
+}

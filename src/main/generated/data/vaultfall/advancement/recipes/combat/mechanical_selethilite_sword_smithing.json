@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_selethilite_upgrade_component": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vaultfall:selethilite_upgrade_component"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vaultfall:mechanical_selethilite_sword_smithing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_selethilite_upgrade_component"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vaultfall:mechanical_selethilite_sword_smithing"
+    ]
+  }
+}

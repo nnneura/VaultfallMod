@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "vaultfall:lingote_acero"
+    },
+    "C": {
+      "item": "vaultfall:celula_energia"
+    },
+    "S": {
+      "item": "vaultfall:selethilite"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "CSC",
+    "ACA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vaultfall:nucleo_selethilita"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vaultfall:item/espada_mecanica_mejorada"
+  }
+}

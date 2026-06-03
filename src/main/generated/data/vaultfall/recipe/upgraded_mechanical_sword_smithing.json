@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "vaultfall:mechanical_sword_upgrade_component"
+  },
+  "base": {
+    "item": "vaultfall:espada_mecanica_base"
+  },
+  "result": {
+    "count": 1,
+    "id": "vaultfall:espada_mecanica_mejorada"
+  },
+  "template": {
+    "item": "vaultfall:plantilla_selethilite"
+  }
+}

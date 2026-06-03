@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "G": {
+      "item": "vaultfall:engranaje"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "item": "vaultfall:lingote_acero"
+    }
+  },
+  "pattern": [
+    "RSR",
+    "GDG",
+    "RSR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vaultfall:nucleo_propulsion"
+  }
+}

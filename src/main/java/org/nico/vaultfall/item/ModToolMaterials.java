@@ -7,7 +7,10 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 
 public enum ModToolMaterials implements ToolMaterial {
-    STEEL_BASE(BlockTags.INCORRECT_FOR_IRON_TOOL, 1555, 6.0f, 2.0f, 14);
+    // Usamos los mismos atributos que STEEL_BASE, solo variando la durabilidad
+    STEEL_BASE(BlockTags.INCORRECT_FOR_IRON_TOOL, 1555, 6.0f, 2.0f, 14),
+    ENHANCED_STEEL(BlockTags.INCORRECT_FOR_IRON_TOOL, 2555, 6.0f, 2.0f, 14),
+    SELETHILITE(BlockTags.INCORRECT_FOR_IRON_TOOL, 7555, 6.0f, 2.0f, 14);
 
     private final TagKey<Block> inverseTag;
     private final int durability;
@@ -36,7 +39,7 @@ public enum ModToolMaterials implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        // Se reparará usando tu nuevo lingote de acero en el yunque
+        // Por ahora ambos se reparan con LINGOTE_ACERO
         return Ingredient.ofItems(ModItems.LINGOTE_ACERO);
     }
 }

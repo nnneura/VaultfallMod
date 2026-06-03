@@ -62,98 +62,42 @@ public class ModItems {
                     new Item(new Item.Settings()));
 
     public static final Item ESPADA_MECANICA_BASE = registerItem("espada_mecanica_base",
-            new SwordItem(ModToolMaterials.STEEL_BASE, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(
-                            ModToolMaterials.STEEL_BASE, 5, -2.2f
-                    ))
+            new CustomSwordItem(
+                    ModToolMaterials.STEEL_BASE,
+                    new Item.Settings().attributeModifiers(
+                            SwordItem.createAttributeModifiers(ModToolMaterials.STEEL_BASE, 5, -2.2f)
+                    ),
+                    "tooltip.vaultfall.espada_mecanica_base.line1",
+                    "tooltip.vaultfall.espada_mecanica_base.line2"
+
+
             )
     );
 
     public static final Item ESPADA_MECANICA_MEJORADA = registerItem("espada_mecanica_mejorada",
-            new SwordItem(
-
-                    new ToolMaterial() {
-                        @Override
-                        public int getDurability() {
-                            return 2500;
-                        }
-
-                        @Override
-                        public float getMiningSpeedMultiplier() {
-                            return ModToolMaterials.STEEL_BASE.getMiningSpeedMultiplier();
-                        }
-
-                        @Override
-                        public float getAttackDamage() {
-                            return ModToolMaterials.STEEL_BASE.getAttackDamage(); // 2.0f
-                        }
-
-                        @Override
-                        public net.minecraft.registry.tag.TagKey<net.minecraft.block.Block> getInverseTag() {
-                            return ModToolMaterials.STEEL_BASE.getInverseTag();
-                        }
-
-                        @Override
-                        public int getEnchantability() {
-                            return ModToolMaterials.STEEL_BASE.getEnchantability();
-                        }
-
-                        @Override
-                        public net.minecraft.recipe.Ingredient getRepairIngredient() {
-                            return ModToolMaterials.STEEL_BASE.getRepairIngredient();
-                        }
-                    },
+            new CustomSwordItem(
+                    ModToolMaterials.ENHANCED_STEEL, // Usamos el nuevo material del enum
                     new Item.Settings().attributeModifiers(
-                            SwordItem.createAttributeModifiers(
-                                    ModToolMaterials.STEEL_BASE,
-                                    9,
-                                    -2.2f
-                            )
-                    )
+                            SwordItem.createAttributeModifiers(ModToolMaterials.ENHANCED_STEEL, 9, -2.2f)
+                    ),
+                    "tooltip.vaultfall.espada_mecanica_mejorada.line1",
+                    "tooltip.vaultfall.espada_mecanica_mejorada.line2",
+                    "tooltip.vaultfall.espada_mecanica_mejorada.line3",
+                    "tooltip.vaultfall.espada_mecanica_mejorada.line4"
             )
     );
 
     public static final Item ESPADA_MECANICA_SELETHILITE = registerItem("espada_mecanica_selethilite",
-            new SwordItem(
-
-                    new ToolMaterial() {
-                        @Override
-                        public int getDurability() {
-                            return 7555;
-                        }
-
-                        @Override
-                        public float getMiningSpeedMultiplier() {
-                            return ModToolMaterials.STEEL_BASE.getMiningSpeedMultiplier();
-                        }
-
-                        @Override
-                        public float getAttackDamage() {
-                            return ModToolMaterials.STEEL_BASE.getAttackDamage(); // 2.0f
-                        }
-
-                        @Override
-                        public net.minecraft.registry.tag.TagKey<net.minecraft.block.Block> getInverseTag() {
-                            return ModToolMaterials.STEEL_BASE.getInverseTag();
-                        }
-
-                        @Override
-                        public int getEnchantability() {
-                            return ModToolMaterials.STEEL_BASE.getEnchantability();
-                        }
-
-                        @Override
-                        public net.minecraft.recipe.Ingredient getRepairIngredient() {
-                            return ModToolMaterials.STEEL_BASE.getRepairIngredient();
-                        }
-                    },
+            new CustomSwordItem(
+                    ModToolMaterials.SELETHILITE, // Usamos el nuevo material del enum
                     new Item.Settings().attributeModifiers(
-                            SwordItem.createAttributeModifiers(
-                                    ModToolMaterials.STEEL_BASE,
-                                    11,
-                                    -2.2f
-                            )
-                    )
+                            SwordItem.createAttributeModifiers(ModToolMaterials.SELETHILITE, 11, -2.2f)
+                    ),
+                    "tooltip.vaultfall.espada_selethilite.line1",
+                    "tooltip.vaultfall.espada_selethilite.line2",
+                    "tooltip.vaultfall.espada_selethilite.line3",
+                    "tooltip.vaultfall.espada_selethilite.line4",
+                    "tooltip.vaultfall.espada_selethilite.line5"
             )
     );
 

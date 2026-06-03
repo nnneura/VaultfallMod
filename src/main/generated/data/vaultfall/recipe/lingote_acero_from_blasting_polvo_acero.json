@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "lingote_acero",
+  "ingredient": {
+    "item": "vaultfall:polvo_acero"
+  },
+  "result": {
+    "id": "vaultfall:lingote_acero"
+  }
+}

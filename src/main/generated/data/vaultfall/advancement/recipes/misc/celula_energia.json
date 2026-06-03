@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_selethilite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vaultfall:selethilite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vaultfall:celula_energia"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_selethilite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vaultfall:celula_energia"
+    ]
+  }
+}

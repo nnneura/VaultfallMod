@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "vaultfall:block/deepslate_selethilite_ore"
+  }
+}
