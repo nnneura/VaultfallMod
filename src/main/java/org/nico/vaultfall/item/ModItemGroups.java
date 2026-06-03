@@ -52,6 +52,10 @@ public class ModItemGroups {
                                 entries.add(ModItems.PLANTILLA_SELETHILITE);
                                 entries.add(ModItems.NUCLEO_SELETHILITA);
                                 entries.add(ModItems.SELETHILITE_UPGRADE_COMPONENT);
+                                entries.add(ModItems.EXO_BOTAS);
+                                entries.add(ModItems.EXO_PIERNAS);
+                                entries.add(ModItems.EXO_TORSO);
+                                entries.add(ModItems.EXO_CASCO);
 
 
 

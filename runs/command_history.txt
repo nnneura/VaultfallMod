@@ -1,6 +1,3 @@
-/reload
-/data get entity @s SelectedItem
-/data get entity Player871 SelectedItem
 /loot give Player6 loot vaultfall:blocks/engranaje
 /loot give Player6 loot vaultfall:blocks/engranaje_oxidado
 /reload
@@ -48,3 +45,6 @@
 /summon minecraft:giant
 /summon minecraft:giant}
 /summon minecraft:giant
+/effect give Player519 vaultfall:electrificado
+/weather clear
+/time set day

@@ -26,6 +26,16 @@
   "item.vaultfall.espada_mecanica_mejorada": "Upgraded Mechanical Sword",
   "item.vaultfall.espada_mecanica_selethilite": "Selethilite Mechanical Sword",
 
+  "item.vaultfall.exo_casco": "Exo-Helmet Frame",
+  "item.vaultfall.exo_torso": "Exo-Chest Frame",
+  "item.vaultfall.exo_botas": "Exo-Boots Frame",
+  "item.vaultfall.exo_piernas": "Exo-Legs Frame",
+
+  "item.vaultfall.modulo_vision_nocturna": "Module: Night Vision",
+  "item.vaultfall.modulo_elytra_integrada": "Module: Integrated Elytra",
+
+  "tooltip.vaultfall.exo_slots": "§8Module Slots: [1/1]",
+
   "tooltip.vaultfall.espada_mecanica_base.line1": "A precision-engineered steel blade.",
   "tooltip.vaultfall.espada_mecanica_base.line2": "Sharp, reliable, and unadorned.",
 

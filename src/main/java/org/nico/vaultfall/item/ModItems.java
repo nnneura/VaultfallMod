@@ -61,6 +61,33 @@ public class ModItems {
             registerItem("nucleo_selethilita",
                     new Item(new Item.Settings()));
 
+    public static final Item EXO_CASCO = registerItem("exo_casco",
+            new ExoPieceItem(new Item.Settings())
+    );
+
+    public static final Item EXO_TORSO = registerItem("exo_torso",
+            new ExoPieceItem(new Item.Settings())
+    );
+
+    public static final Item EXO_PIERNAS = registerItem("exo_piernas",
+            new ExoPieceItem(new Item.Settings())
+    );
+
+    public static final Item EXO_BOTAS = registerItem("exo_botas",
+            new ExoPieceItem(new Item.Settings())
+    );
+
+    // --- MÓDULOS DE PRUEBA ---
+// Los módulos son simplemente ítems normales por ahora.
+// No se pueden apilar para evitar bugs en la interfaz de módulos.
+    public static final Item MODULO_VISION_NOCTURNA = registerItem("modulo_vision_nocturna",
+            new Item(new Item.Settings().maxCount(1))
+    );
+
+    public static final Item MODULO_ELYTRA_INTEGRADA = registerItem("modulo_elytra_integrada",
+            new Item(new Item.Settings().maxCount(1))
+    );
+
     public static final Item ESPADA_MECANICA_BASE = registerItem("espada_mecanica_base",
             new CustomSwordItem(
                     ModToolMaterials.STEEL_BASE,
