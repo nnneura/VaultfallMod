@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-03T16:28:36.2935118	Vaultfall/Model Definitions
+// 1.21.1	2026-06-03T17:50:16.9176419	Vaultfall/Model Definitions
 274ff13ce3b36b97c99a042ba54602ab865cd278 assets\vaultfall\models\item\reinforced_steel_block.json
 2fdbcc2de4909c28acf34406cbc4522189f02b04 assets\vaultfall\models\item\celula_energia.json
 e2b55888bb5afa8514f3fb1de451c6aa3ca8959a assets\vaultfall\models\item\engranaje.json
@@ -9,11 +9,12 @@ be1298b7e0799e5ad443b731452f143b049c8cc1 assets\vaultfall\models\item\polvo_acer
 760bf102f1b331cb291b2c3d749eb37f30e17a3e assets\vaultfall\models\item\selethilite.json
 12b47800e3fcaaceb25557836b34c032ba7cf707 assets\vaultfall\models\item\barra_acero.json
 d0465e94a321e2fb236b1363a621e1f085d19cfb assets\vaultfall\models\block\reinforced_steel_block.json
+eee282348cd0114ab06aae6eedd28f3c69390b05 assets\vaultfall\models\item\exo_torso.json
 2b004a4dc3ca728e4c9ebd8ae33629dac7ae306a assets\vaultfall\blockstates\lampara_selethilite.json
 7845af2223bd0d1beec78f0e454392a7fe3e9cd5 assets\vaultfall\blockstates\selethilite_block.json
 6954f3c14f45d8d1e6af4a6a110f672387c2e9f9 assets\vaultfall\models\block\rejilla_acero.json
-ea12180ce90273a062f1cfe95cae07e397da69ad assets\vaultfall\blockstates\reinforced_steel_block.json
 4a70363d202b1bf7bae145fe18932d6b28f17ac5 assets\vaultfall\models\item\plantilla_selethilite.json
+ea12180ce90273a062f1cfe95cae07e397da69ad assets\vaultfall\blockstates\reinforced_steel_block.json
 9968010fc594c5cb83099c2dd06f52c39bb045a6 assets\vaultfall\models\item\propulsor.json
 db133132dfec963bb8839ccf60492e15f441b4bf assets\vaultfall\models\block\selethilite_ore.json
 dcf1f4fe5c224d7129963393be0ea8289e8ad3d3 assets\vaultfall\blockstates\rejilla_acero.json
@@ -24,6 +25,8 @@ dce0829c7359f08e34e0aba056b60d6e213d56b3 assets\vaultfall\models\block\viga_acer
 89c7fbb82e50eeaa2ab717cfec0a770ab62154d4 assets\vaultfall\models\item\lingote_acero.json
 272326d8e26e496c7cde808a6e61bcdd44225f5b assets\vaultfall\models\item\espada_mecanica_mejorada.json
 ade438bc91b653b6c34253520a0c30045f70d1ec assets\vaultfall\models\item\nucleo_selethilita.json
+62835e189afbd49c3a851624ce07b4495aa38521 assets\vaultfall\models\item\exo_casco.json
+a0787ee4fcb13b604f7158bac5c319b7ee14482b assets\vaultfall\models\item\exo_piernas.json
 b6334ef133a2c2f84264627be2b9b2cd21f863d7 assets\vaultfall\models\item\mango_acero.json
 934c016cfbae0888fe835b8a68236404e3ded414 assets\vaultfall\models\item\selethilite_upgrade_component.json
 d530dc9ef6a903c86374d5edcbccd4760887d450 assets\vaultfall\models\item\rejilla_acero.json
@@ -36,6 +39,7 @@ bb70cfb92366da26316d7b558319c7d645e6dad4 assets\vaultfall\models\item\selethilit
 3ea3816de5887a5e6c45da053b05c473d7980e2d assets\vaultfall\models\item\engranaje_oxidado.json
 b4ff1b6fe09e938f0f1c9d1071f55945ab87f36d assets\vaultfall\models\item\deepslate_selethilite_ore.json
 02e02f3dd860912d4353ad2751b6b9429c5f60a0 assets\vaultfall\models\item\lampara_selethilite.json
+dde6cd81e3d4e6f33e1825a4ea94d2a839d31f5c assets\vaultfall\models\item\exo_botas.json
 497aee447d7b908a8b9c85bb5355f575becca09d assets\vaultfall\models\item\viga_acero.json
 75a64265951916f5d0d51d32d520b6ceb914bc50 assets\vaultfall\models\item\selethilite_ore.json
 664e3ecd5e8f1af769b9463802073ace835c87be assets\vaultfall\models\item\espada_mecanica_base.json

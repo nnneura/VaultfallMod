@@ -1,5 +1,6 @@
 package org.nico.vaultfall.item;
 
+import dev.emi.trinkets.api.Trinket; // <-- IMPORTANTE IMPORTAR ESTO
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.ContainerComponent;
 import net.minecraft.item.Item;
@@ -11,12 +12,12 @@ import net.minecraft.util.collection.DefaultedList;
 
 import java.util.List;
 
-public class ExoPieceItem extends Item {
+// Añadimos "implements Trinket"
+public class ExoPieceItem extends Item implements Trinket {
 
     public ExoPieceItem(Settings settings) {
-        // Forzamos que el ítem tenga un componente de contenedor de 1 slot por defecto
         super(settings
-                .maxCount(1) // Las piezas de exoesqueleto no se pueden apilar
+                .maxCount(1)
                 .component(
                         DataComponentTypes.CONTAINER,
                         ContainerComponent.fromStacks(DefaultedList.ofSize(1, ItemStack.EMPTY))
@@ -27,8 +28,8 @@ public class ExoPieceItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         tooltip.add(Text.translatable("tooltip.vaultfall.exo_slots").formatted(Formatting.GRAY));
-
-        // Más adelante, aquí leeremos el componente CONTAINER
-        // para imprimir el nombre del módulo instalado directamente en el tooltip.
     }
+
+    // Al implementar Trinket, heredamos mágicamente el método "tick".
+    // Lo usaremos más adelante para darle poder a los módulos.
 }

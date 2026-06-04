@@ -1,6 +1,3 @@
-/loot give Player6 loot vaultfall:blocks/engranaje
-/loot give Player6 loot vaultfall:blocks/engranaje_oxidado
-/reload
 /give Player314 minecraft:diamond_pickaxe
 /enchant Player314 minecraft:efficiency 5
 /time set day
@@ -48,3 +45,6 @@
 /effect give Player519 vaultfall:electrificado
 /weather clear
 /time set day
+/datapack list
+/trinkets
+/reload
