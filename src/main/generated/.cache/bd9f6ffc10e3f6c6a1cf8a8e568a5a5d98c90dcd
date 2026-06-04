@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-03T17:50:16.9176419	Vaultfall/Model Definitions
+// 1.21.1	2026-06-04T00:12:39.236623	Vaultfall/Model Definitions
 274ff13ce3b36b97c99a042ba54602ab865cd278 assets\vaultfall\models\item\reinforced_steel_block.json
 2fdbcc2de4909c28acf34406cbc4522189f02b04 assets\vaultfall\models\item\celula_energia.json
 e2b55888bb5afa8514f3fb1de451c6aa3ca8959a assets\vaultfall\models\item\engranaje.json
@@ -9,16 +9,18 @@ be1298b7e0799e5ad443b731452f143b049c8cc1 assets\vaultfall\models\item\polvo_acer
 760bf102f1b331cb291b2c3d749eb37f30e17a3e assets\vaultfall\models\item\selethilite.json
 12b47800e3fcaaceb25557836b34c032ba7cf707 assets\vaultfall\models\item\barra_acero.json
 d0465e94a321e2fb236b1363a621e1f085d19cfb assets\vaultfall\models\block\reinforced_steel_block.json
+569fa5d05d10677e1e561f75c8abe516b9924e0b assets\vaultfall\models\item\modulo_respiracion.json
 eee282348cd0114ab06aae6eedd28f3c69390b05 assets\vaultfall\models\item\exo_torso.json
 2b004a4dc3ca728e4c9ebd8ae33629dac7ae306a assets\vaultfall\blockstates\lampara_selethilite.json
 7845af2223bd0d1beec78f0e454392a7fe3e9cd5 assets\vaultfall\blockstates\selethilite_block.json
 6954f3c14f45d8d1e6af4a6a110f672387c2e9f9 assets\vaultfall\models\block\rejilla_acero.json
-4a70363d202b1bf7bae145fe18932d6b28f17ac5 assets\vaultfall\models\item\plantilla_selethilite.json
 ea12180ce90273a062f1cfe95cae07e397da69ad assets\vaultfall\blockstates\reinforced_steel_block.json
+4a70363d202b1bf7bae145fe18932d6b28f17ac5 assets\vaultfall\models\item\plantilla_selethilite.json
 9968010fc594c5cb83099c2dd06f52c39bb045a6 assets\vaultfall\models\item\propulsor.json
 db133132dfec963bb8839ccf60492e15f441b4bf assets\vaultfall\models\block\selethilite_ore.json
 dcf1f4fe5c224d7129963393be0ea8289e8ad3d3 assets\vaultfall\blockstates\rejilla_acero.json
 1f62559e091ede817a48eee643e15f17fedd88ce assets\vaultfall\blockstates\selethilite_ore.json
+ee1ac599e3f98ebb242b4da6bb7e80b0d564e71c assets\vaultfall\models\item\modulo_vision_nocturna.json
 02a3c2e5bf5570e8d8ad577afd23105c7e41c2da assets\vaultfall\models\block\rusty_reinforced_steel_block.json
 2c819e907d65e2ca49051373024230f67dd5ddb7 assets\vaultfall\models\block\deepslate_selethilite_ore.json
 dce0829c7359f08e34e0aba056b60d6e213d56b3 assets\vaultfall\models\block\viga_acero.json

@@ -5,6 +5,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-06-02 18:38:02 -0600"
+    },
+    "done": false
+  },
   "minecraft:adventure/root": {
     "criteria": {
       "killed_something": "2026-06-02 18:39:18 -0600"
@@ -26,11 +32,11 @@
     },
     "done": true
   },
-  "minecraft:adventure/adventuring_time": {
+  "minecraft:recipes/misc/red_dye_from_poppy": {
     "criteria": {
-      "minecraft:plains": "2026-06-02 18:38:02 -0600"
+      "has_poppy": "2026-06-03 19:22:38 -0600"
     },
-    "done": false
+    "done": true
   },
   "DataVersion": 3955
 }

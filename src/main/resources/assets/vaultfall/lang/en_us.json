@@ -37,9 +37,10 @@
   "trinkets.group.exo": "Exoskeleton",
 
   "item.vaultfall.modulo_vision_nocturna": "Module: Night Vision",
-  "item.vaultfall.modulo_elytra_integrada": "Module: Integrated Elytra",
+  "item.vaultfall.modulo_respiracion": "Module: Water breathing",
 
   "tooltip.vaultfall.exo_slots": "§8Module Slots: [0/1]",
+  "tooltip.vaultfall.exo_piece.modules": "Module slots: ",
 
   "tooltip.vaultfall.espada_mecanica_base.line1": "A precision-engineered steel blade.",
   "tooltip.vaultfall.espada_mecanica_base.line2": "Sharp, reliable, and unadorned.",

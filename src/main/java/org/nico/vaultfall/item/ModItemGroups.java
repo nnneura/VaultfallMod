@@ -56,6 +56,8 @@ public class ModItemGroups {
                                 entries.add(ModItems.EXO_PIERNAS);
                                 entries.add(ModItems.EXO_TORSO);
                                 entries.add(ModItems.EXO_CASCO);
+                                entries.add(ModItems.MODULO_VISION_NOCTURNA);
+                                entries.add(ModItems.MODULO_RESPIRACION);
 
 
 

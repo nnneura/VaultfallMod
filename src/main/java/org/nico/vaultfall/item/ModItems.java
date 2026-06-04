@@ -6,6 +6,8 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
+import org.nico.vaultfall.util.ModTags;
 
 public class ModItems {
 
@@ -62,30 +64,31 @@ public class ModItems {
                     new Item(new Item.Settings()));
 
     public static final Item EXO_CASCO = registerItem("exo_casco",
-            new ExoPieceItem(new Item.Settings())
+            new ExoPieceItem(new Item.Settings().maxCount(1),
+                    ModTags.Items.HEAD_MODULES)
     );
 
     public static final Item EXO_TORSO = registerItem("exo_torso",
-            new ExoPieceItem(new Item.Settings())
+            new ExoPieceItem(new Item.Settings().maxCount(1),
+                    ModTags.Items.CHEST_MODULES)
     );
 
     public static final Item EXO_PIERNAS = registerItem("exo_piernas",
-            new ExoPieceItem(new Item.Settings())
+            new ExoPieceItem(new Item.Settings().maxCount(1),
+                    ModTags.Items.LEGS_MODULES)
     );
 
     public static final Item EXO_BOTAS = registerItem("exo_botas",
-            new ExoPieceItem(new Item.Settings())
+            new ExoPieceItem(new Item.Settings().maxCount(1),
+                    ModTags.Items.FEET_MODULES)
     );
 
-    // --- MÓDULOS DE PRUEBA ---
-// Los módulos son simplemente ítems normales por ahora.
-// No se pueden apilar para evitar bugs en la interfaz de módulos.
     public static final Item MODULO_VISION_NOCTURNA = registerItem("modulo_vision_nocturna",
-            new Item(new Item.Settings().maxCount(1))
+            new Item(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON))
     );
 
-    public static final Item MODULO_ELYTRA_INTEGRADA = registerItem("modulo_elytra_integrada",
-            new Item(new Item.Settings().maxCount(1))
+    public static final Item MODULO_RESPIRACION = registerItem("modulo_respiracion",
+            new Item(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON))
     );
 
     public static final Item ESPADA_MECANICA_BASE = registerItem("espada_mecanica_base",
