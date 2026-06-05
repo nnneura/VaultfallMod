@@ -26,38 +26,56 @@ public class ModItemGroups {
 
                             .entries((displayContext, entries) -> {
 
-                                entries.add(ModBlocks.ENGRANAJE.asItem());
-                                entries.add(ModBlocks.ENGRANAJE_OXIDADO.asItem());
+                                // === 1. BLOQUES NATURALES Y MINERALES ===
                                 entries.add(ModBlocks.SELETHILITE_ORE.asItem());
                                 entries.add(ModBlocks.DEEPSLATE_SELETHILITE_ORE.asItem());
+
+// === 2. BLOQUES DE ALMACENAMIENTO (METALES/GEMAS) ===
                                 entries.add(ModBlocks.SELETHILITE_BLOCK.asItem());
-                                entries.add(ModBlocks.RUSTY_REINFORCED_STEEL_BLOCK.asItem());
                                 entries.add(ModBlocks.REINFORCED_STEEL_BLOCK.asItem());
+                                entries.add(ModBlocks.RUSTY_REINFORCED_STEEL_BLOCK.asItem());
+
+// === 3. BLOQUES DE DECORACIÓN / ESTRUCTURA ===
                                 entries.add(ModBlocks.VIGA_ACERO.asItem());
-                                entries.add(ModBlocks.LAMPARA_SELETHILITE.asItem());
                                 entries.add(ModBlocks.REJILLA_ACERO.asItem());
-                                entries.add(ModItems.NUCLEO_PROPULSION);
-                                entries.add(ModItems.CELULA_ENERGIA);
+                                entries.add(ModBlocks.LAMPARA_SELETHILITE.asItem());
+                                entries.add(ModBlocks.ENGRANAJE.asItem());
+                                entries.add(ModBlocks.ENGRANAJE_OXIDADO.asItem());
+
+// === 4. MATERIALES BASE (INGOTES, POLVOS, GEMAS) ===
                                 entries.add(ModItems.SELETHILITE);
-                                entries.add(ModItems.PROPULSOR);
                                 entries.add(ModItems.POLVO_ACERO);
                                 entries.add(ModItems.LINGOTE_ACERO);
-                                entries.add(ModItems.ESPADA_MECANICA_BASE);
+
+// === 5. COMPONENTES DE CRAFTEO INTERMEDIOS ===
+                                entries.add(ModItems.BARRA_ACERO);
                                 entries.add(ModItems.MANGO_ACERO);
                                 entries.add(ModItems.HOJA_ACERO);
-                                entries.add(ModItems.BARRA_ACERO);
+                                entries.add(ModItems.CELULA_ENERGIA);
+                                entries.add(ModItems.NUCLEO_PROPULSION);
+                                entries.add(ModItems.PROPULSOR);
+                                entries.add(ModItems.NUCLEO_SELETHILITA);
+
+// === 6. PLANTILLAS Y COMPONENTES DE MEJORA ===
+                                entries.add(ModItems.PLANTILLA_SELETHILITE);
                                 entries.add(ModItems.MECHANICAL_SWORD_UPGRADE_COMPONENT);
+                                entries.add(ModItems.SELETHILITE_UPGRADE_COMPONENT);
+
+// === 7. HERRAMIENTAS Y ARMAS (PROGRESIÓN) ===
+                                entries.add(ModItems.ESPADA_MECANICA_BASE);
                                 entries.add(ModItems.ESPADA_MECANICA_MEJORADA);
                                 entries.add(ModItems.ESPADA_MECANICA_SELETHILITE);
-                                entries.add(ModItems.PLANTILLA_SELETHILITE);
-                                entries.add(ModItems.NUCLEO_SELETHILITA);
-                                entries.add(ModItems.SELETHILITE_UPGRADE_COMPONENT);
-                                entries.add(ModItems.EXO_BOTAS);
-                                entries.add(ModItems.EXO_PIERNAS);
-                                entries.add(ModItems.EXO_TORSO);
+
+// === 8. ARMADURAS (DE CABEZA A PIES) ===
                                 entries.add(ModItems.EXO_CASCO);
+                                entries.add(ModItems.EXO_TORSO);
+                                entries.add(ModItems.EXO_PIERNAS);
+                                entries.add(ModItems.EXO_BOTAS);
+
+// === 9. MÓDULOS DE MEJORA (EXOESQUELETO) ===
                                 entries.add(ModItems.MODULO_VISION_NOCTURNA);
                                 entries.add(ModItems.MODULO_RESPIRACION);
+                                entries.add(ModItems.MODULO_ADRENALINA);
 
 
 

@@ -26,7 +26,11 @@
   "item.vaultfall.espada_mecanica_mejorada": "Upgraded Mechanical Sword",
   "item.vaultfall.espada_mecanica_selethilite": "Selethilite Mechanical Sword",
 
-  "item.vaultfall.exo_casco": "Exo-Helmet Frame",
+  "effect.vaultfall.estatica": "Static",
+  "effect.vaultfall.electrificado": "Electrified",
+  "effect.vaultfall.paralisis": "Paralyzed",
+
+  "item.vaultfall.exo_casco": "Exo-Head Frame",
   "item.vaultfall.exo_torso": "Exo-Chest Frame",
   "item.vaultfall.exo_botas": "Exo-Boots Frame",
   "item.vaultfall.exo_piernas": "Exo-Legs Frame",
@@ -38,6 +42,25 @@
 
   "item.vaultfall.modulo_vision_nocturna": "Module: Night Vision",
   "item.vaultfall.modulo_respiracion": "Module: Water breathing",
+  "item.vaultfall.modulo_adrenalina": "Module: Second wind",
+
+  "tooltip.vaultfall.modulo_vision_nocturna_line1": "Optimizes optical sensors with Selethilite",
+  "tooltip.vaultfall.modulo_vision_nocturna_line2": "Grants the infinite Night Vision effect",
+  "tooltip.vaultfall.modulo_vision_nocturna_line3": "Fixed installation in the Exo-Head Frame slot",
+
+  "tooltip.vaultfall.modulo_respiracion_line1": "Synthesizes breathable oxygen from the environment",
+  "tooltip.vaultfall.modulo_respiracion_line2": "Grants permanent Water Breathing to the user",
+  "tooltip.vaultfall.modulo_respiracion_line3": "Fixed installation in the Exo-Head Frame slot",
+
+  "tooltip.vaultfall.modulo_second_wind_line1": "Automated life support upon critical damage",
+  "tooltip.vaultfall.modulo_second_wind_line2": "Unleashes its systems when dropping below 30% health",
+  "tooltip.vaultfall.modulo_second_wind_line3": "» Paralyzes all enemies within fifteen blocks and",
+  "tooltip.vaultfall.modulo_second_wind_line4": "  stops them completely for 5 seconds",
+  "tooltip.vaultfall.modulo_second_wind_line5": "» Injects a highly potent dose of adrenaline",
+  "tooltip.vaultfall.modulo_second_wind_line6": "  Heals 2 hearts, Regeneration I (10s) and an",
+  "tooltip.vaultfall.modulo_second_wind_line7": "  extreme Resistance V effect for about 2s",
+  "tooltip.vaultfall.modulo_second_wind_line8": "Total device cooldown time: 60 s",
+  "tooltip.vaultfall.modulo_second_wind_line9": "Fixed integration in the Exo-Chest Frame slot",
 
   "tooltip.vaultfall.exo_slots": "§8Module Slots: [0/1]",
   "tooltip.vaultfall.exo_piece.modules": "Module slots: ",

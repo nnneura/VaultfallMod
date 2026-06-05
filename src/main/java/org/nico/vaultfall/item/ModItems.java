@@ -1,13 +1,19 @@
 package org.nico.vaultfall.item;
 
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.LoreComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import org.nico.vaultfall.util.ModTags;
+
+import java.util.List;
 
 public class ModItems {
 
@@ -49,46 +55,74 @@ public class ModItems {
 
     public static final Item MECHANICAL_SWORD_UPGRADE_COMPONENT =
             registerItem("mechanical_sword_upgrade_component",
-                    new Item(new Item.Settings()));
+                    new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
 
     public static final Item PLANTILLA_SELETHILITE =
             registerItem("plantilla_selethilite",
-                    new Item(new Item.Settings()));
+                    new Item(new Item.Settings().rarity(Rarity.RARE)));
 
     public static final Item SELETHILITE_UPGRADE_COMPONENT =
             registerItem("selethilite_upgrade_component",
-                    new Item(new Item.Settings()));
+                    new Item(new Item.Settings().rarity(Rarity.RARE)));
 
     public static final Item NUCLEO_SELETHILITA =
             registerItem("nucleo_selethilita",
                     new Item(new Item.Settings()));
 
     public static final Item EXO_CASCO = registerItem("exo_casco",
-            new ExoPieceItem(new Item.Settings().maxCount(1),
+            new ExoPieceItem(new Item.Settings().rarity(Rarity.RARE).maxCount(1),
                     ModTags.Items.HEAD_MODULES)
     );
 
     public static final Item EXO_TORSO = registerItem("exo_torso",
-            new ExoPieceItem(new Item.Settings().maxCount(1),
+            new ExoPieceItem(new Item.Settings().rarity(Rarity.RARE).maxCount(1),
                     ModTags.Items.CHEST_MODULES)
     );
 
     public static final Item EXO_PIERNAS = registerItem("exo_piernas",
-            new ExoPieceItem(new Item.Settings().maxCount(1),
+            new ExoPieceItem(new Item.Settings().rarity(Rarity.RARE).maxCount(1),
                     ModTags.Items.LEGS_MODULES)
     );
 
     public static final Item EXO_BOTAS = registerItem("exo_botas",
-            new ExoPieceItem(new Item.Settings().maxCount(1),
+            new ExoPieceItem(new Item.Settings().rarity(Rarity.RARE).maxCount(1),
                     ModTags.Items.FEET_MODULES)
     );
 
     public static final Item MODULO_VISION_NOCTURNA = registerItem("modulo_vision_nocturna",
-            new Item(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON))
+            new Item(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON).component(DataComponentTypes.LORE,
+                    new LoreComponent(List.of(
+                            Text.translatable("tooltip.vaultfall.modulo_vision_nocturna_line1").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_vision_nocturna_line2").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_vision_nocturna_line3").formatted(Formatting.DARK_PURPLE)
+                    ))
+            ))
     );
 
     public static final Item MODULO_RESPIRACION = registerItem("modulo_respiracion",
-            new Item(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON))
+            new Item(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON).component(DataComponentTypes.LORE,
+                    new LoreComponent(List.of(
+                            Text.translatable("tooltip.vaultfall.modulo_respiracion_line1").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_respiracion_line2").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_respiracion_line3").formatted(Formatting.DARK_PURPLE)
+                    ))
+            ))
+    );
+
+    public static final Item MODULO_ADRENALINA = registerItem("modulo_adrenalina",
+            new Item(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON).component(DataComponentTypes.LORE,
+                    new LoreComponent(List.of(
+                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line1").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line2").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line3").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line4").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line5").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line6").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line7").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line8").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line9").formatted(Formatting.DARK_PURPLE)
+                    ))
+            ))
     );
 
     public static final Item ESPADA_MECANICA_BASE = registerItem("espada_mecanica_base",
@@ -107,7 +141,7 @@ public class ModItems {
     public static final Item ESPADA_MECANICA_MEJORADA = registerItem("espada_mecanica_mejorada",
             new CustomSwordItem(
                     ModToolMaterials.ENHANCED_STEEL, // Usamos el nuevo material del enum
-                    new Item.Settings().attributeModifiers(
+                    new Item.Settings().rarity(Rarity.RARE).attributeModifiers(
                             SwordItem.createAttributeModifiers(ModToolMaterials.ENHANCED_STEEL, 9, -2.2f)
                     ),
                     "tooltip.vaultfall.espada_mecanica_mejorada.line1",
@@ -120,7 +154,7 @@ public class ModItems {
     public static final Item ESPADA_MECANICA_SELETHILITE = registerItem("espada_mecanica_selethilite",
             new CustomSwordItem(
                     ModToolMaterials.SELETHILITE, // Usamos el nuevo material del enum
-                    new Item.Settings().attributeModifiers(
+                    new Item.Settings().rarity(Rarity.EPIC).attributeModifiers(
                             SwordItem.createAttributeModifiers(ModToolMaterials.SELETHILITE, 11, -2.2f)
                     ),
                     "tooltip.vaultfall.espada_selethilite.line1",
