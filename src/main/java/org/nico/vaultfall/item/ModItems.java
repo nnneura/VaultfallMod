@@ -112,18 +112,53 @@ public class ModItems {
     public static final Item MODULO_ADRENALINA = registerItem("modulo_adrenalina",
             new Item(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON).component(DataComponentTypes.LORE,
                     new LoreComponent(List.of(
-                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line1").formatted(Formatting.DARK_GRAY),
-                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line2").formatted(Formatting.DARK_GRAY),
-                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line3").formatted(Formatting.DARK_GRAY),
-                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line4").formatted(Formatting.DARK_GRAY),
-                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line5").formatted(Formatting.DARK_GRAY),
-                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line6").formatted(Formatting.DARK_GRAY),
-                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line7").formatted(Formatting.DARK_GRAY),
-                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line8").formatted(Formatting.DARK_GRAY),
-                            Text.translatable("tooltip.vaultfall.modulo_second_wind_line9").formatted(Formatting.DARK_PURPLE)
+                            Text.translatable("tooltip.vaultfall.modulo_adrenalina_line1").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_adrenalina_line2").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_adrenalina_line3").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_adrenalina_line4").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_adrenalina_line5").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_adrenalina_line6").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_adrenalina_line7").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_adrenalina_line8").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_adrenalina_line9").formatted(Formatting.DARK_PURPLE)
                     ))
             ))
     );
+
+    public static final Item MODULO_ELYTRA = registerItem("modulo_elytra",
+            new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).component(DataComponentTypes.LORE,
+                    new LoreComponent(List.of(
+                            Text.translatable("tooltip.vaultfall.modulo_elytra_line1").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_elytra_line2").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_elytra_line3").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_elytra_line4").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_elytra_line5").formatted(Formatting.DARK_PURPLE)
+                    ))
+            ))
+    );
+
+    public static final Item MODULO_SPEED = registerItem("modulo_speed",
+            new Item(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON).component(DataComponentTypes.LORE,
+                    new LoreComponent(List.of(
+                            Text.translatable("tooltip.vaultfall.modulo_speed_line1").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_speed_line2").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_speed_line3").formatted(Formatting.DARK_PURPLE)
+
+                    ))
+            ))
+    );
+
+    public static final Item MODULO_KB_RESISTANCE = registerItem("modulo_kb_resistance",
+            new Item(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON).component(DataComponentTypes.LORE,
+                    new LoreComponent(List.of(
+                            Text.translatable("tooltip.vaultfall.modulo_kb_resistance_line1").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_kb_resistance_line2").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_kb_resistance_line3").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_kb_resistance_line4").formatted(Formatting.DARK_PURPLE)
+                    ))
+            ))
+    );
+
 
     public static final Item ESPADA_MECANICA_BASE = registerItem("espada_mecanica_base",
             new CustomSwordItem(
@@ -161,7 +196,8 @@ public class ModItems {
                     "tooltip.vaultfall.espada_selethilite.line2",
                     "tooltip.vaultfall.espada_selethilite.line3",
                     "tooltip.vaultfall.espada_selethilite.line4",
-                    "tooltip.vaultfall.espada_selethilite.line5"
+                    "tooltip.vaultfall.espada_selethilite.line5",
+                    "tooltip.vaultfall.espada_selethilite.line6"
             )
     );
 

@@ -11,7 +11,6 @@ import org.nico.vaultfall.block.ModBlocks;
 
 public class ModItemGroups {
 
-    // Creamos tu pestaña personalizada "Vaultfall"
     public static final ItemGroup VAULTFALL_GROUP =
             Registry.register(
                     Registries.ITEM_GROUP,
@@ -76,6 +75,10 @@ public class ModItemGroups {
                                 entries.add(ModItems.MODULO_VISION_NOCTURNA);
                                 entries.add(ModItems.MODULO_RESPIRACION);
                                 entries.add(ModItems.MODULO_ADRENALINA);
+                                entries.add(ModItems.MODULO_ELYTRA);
+                                entries.add(ModItems.MODULO_SPEED);
+                                entries.add(ModItems.MODULO_KB_RESISTANCE);
+
 
 
 

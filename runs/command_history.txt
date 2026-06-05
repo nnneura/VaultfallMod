@@ -1,10 +1,3 @@
-/difficulty peaceful
-/effect give Player42 minecraft:absorption infinite 50
-/difficulty hard
-/summon minecraft:iron_golem ~ ~ ~
-/summon minecraft:iron_golem ~ ~ ~ 20
-/enchant Player279 minecraft:sweeping_edge
-/enchant Player279 minecraft:sharpness
 /enchant Player10 minecraft:sharpness
 /enchant Player10 minecraft:sharpness 4
 /enchant Player863 minecraft:sharpness 4
@@ -48,3 +41,10 @@
 /tick rate 2000
 /tick rate 200
 /tick rate 20
+/give Player688 vaultfall:modulo_elytra
+/difficulty peaceful
+/give Player915 vaultfall:modulo_kb_resistance
+/damage Player741 8 minecraft:arrow
+/difficulty easy
+/damage Player741 8 minecraft:arrow
+/kill Player741

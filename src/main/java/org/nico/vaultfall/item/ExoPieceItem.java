@@ -45,6 +45,8 @@ import java.util.List;
 public class ExoPieceItem extends TrinketItem {
 
     private static final Identifier TOUGHNESS_ID = Identifier.of("vaultfall", "exo_piece_toughness");
+    private static final Identifier SPEED_MOD_ID = Identifier.of("vaultfall", "module_speed_boost");
+    private static final Identifier KB_RESIST_MOD_ID = Identifier.of("vaultfall", "module_kb_resist");
     private final TagKey<Item> validModuleTag;
 
     public ExoPieceItem(Settings settings, TagKey<Item> validModuleTag) {
@@ -67,6 +69,28 @@ public class ExoPieceItem extends TrinketItem {
         var modifiers = super.getModifiers(stack, slot, entity, id);
         modifiers.put(EntityAttributes.GENERIC_ARMOR_TOUGHNESS, new EntityAttributeModifier(
                 TOUGHNESS_ID, 1.0, EntityAttributeModifier.Operation.ADD_VALUE));
+        ContainerComponent container = stack.get(DataComponentTypes.CONTAINER);
+        if (container != null) {
+            // Obtenemos el primer (y único) ítem en el slot del módulo
+            ItemStack module = container.stream().findFirst().orElse(ItemStack.EMPTY);
+
+            if (!module.isEmpty()) {
+                // --- MÓDULO DE VELOCIDAD ---
+                if (module.isOf(ModItems.MODULO_SPEED)) {
+                    // +0.04 velocidad (Aprox 20-30% más rápido en juego)
+                    modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED,
+                            new EntityAttributeModifier(SPEED_MOD_ID, 0.04, EntityAttributeModifier.Operation.ADD_VALUE));
+                }
+
+                // --- MÓDULO DE RESISTENCIA AL EMPUJE ---
+                if (module.isOf(ModItems.MODULO_KB_RESISTANCE)) {
+                    // +0.4 (40% de probabilidad de ignorar knockback)
+                    // Usamos ADD_VALUE porque KB Resistance funciona como un pool acumulativo en vanilla
+                    modifiers.put(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,
+                            new EntityAttributeModifier(KB_RESIST_MOD_ID, 0.4, EntityAttributeModifier.Operation.ADD_VALUE));
+                }
+            }
+        }
         return modifiers;
     }
 
@@ -92,7 +116,7 @@ public class ExoPieceItem extends TrinketItem {
         if (module.isOf(ModItems.MODULO_RESPIRACION)) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 220, 0, false, false, true));
         }
-        
+
         // --- NUEVO: ADRENALINA & SHOCKWAVE ---
         if (module.isOf(ModItems.MODULO_ADRENALINA) && entity instanceof PlayerEntity player) {
             // Activación: vida < 30% de la máxima

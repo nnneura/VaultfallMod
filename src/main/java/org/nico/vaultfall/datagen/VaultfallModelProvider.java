@@ -78,6 +78,10 @@ public class VaultfallModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MODULO_VISION_NOCTURNA, Models.GENERATED);
         itemModelGenerator.register(ModItems.MODULO_RESPIRACION, Models.GENERATED);
         itemModelGenerator.register(ModItems.MODULO_ADRENALINA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MODULO_ELYTRA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MODULO_SPEED, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MODULO_KB_RESISTANCE, Models.GENERATED);
+
 
 
 

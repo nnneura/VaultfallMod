@@ -4,7 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import org.nico.vaultfall.block.ModBlocks;
 import org.nico.vaultfall.component.ModDataComponents;
 import org.nico.vaultfall.effect.ModEffects;
-import org.nico.vaultfall.item.ModToolMaterials;
+import org.nico.vaultfall.event.ElytraModuleEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.nico.vaultfall.item.ModItems;
@@ -16,6 +16,7 @@ public class Vaultfall implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ElytraModuleEvents.register();
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();

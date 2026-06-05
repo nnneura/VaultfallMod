@@ -1,5 +1,7 @@
 {
   "replace": false,
   "values": [
+    "vaultfall:modulo_speed",
+    "vaultfall:modulo_kb_resistance"
   ]
 }
