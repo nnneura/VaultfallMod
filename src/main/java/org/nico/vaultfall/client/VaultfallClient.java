@@ -8,8 +8,11 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
 import org.nico.vaultfall.client.render.ExoTorsoRenderer;
 import org.nico.vaultfall.item.ModItems;
+import org.nico.vaultfall.networking.ModNetworking;
 import org.nico.vaultfall.screen.ExoModuleScreen;
 import org.nico.vaultfall.screen.ModScreenHandlers;
+
+import static org.nico.vaultfall.Vaultfall.LOGGER;
 
 public class VaultfallClient implements ClientModInitializer {
     @Override
@@ -19,5 +22,14 @@ public class VaultfallClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.REJILLA_ACERO, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LAMPARA_SELETHILITE, RenderLayer.getCutout());
         TrinketRendererRegistry.registerRenderer(ModItems.EXO_TORSO, new ExoTorsoRenderer());
+        ModNetworking.registerS2CPayloads();
+
+        // 2. Registrar el handler que procesará los paquetes S2C
+        ClientJumpFeedbackHandler.register();
+
+        // 3. Registrar el tracker de inputs
+        ClientJumpTracker.register();
+
+        LOGGER.info("[VAULTFALL-CLIENT] Inicialización cliente completada");
     }
 }

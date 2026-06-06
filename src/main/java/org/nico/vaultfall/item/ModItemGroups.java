@@ -78,6 +78,10 @@ public class ModItemGroups {
                                 entries.add(ModItems.MODULO_ELYTRA);
                                 entries.add(ModItems.MODULO_SPEED);
                                 entries.add(ModItems.MODULO_KB_RESISTANCE);
+                                entries.add(ModItems.MODULO_SUPER_SALTO);
+                                entries.add(ModItems.MODULO_DOBLE_SALTO);
+
+
 
 
 

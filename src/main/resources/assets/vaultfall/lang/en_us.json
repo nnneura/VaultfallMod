@@ -46,6 +46,8 @@
   "item.vaultfall.modulo_elytra": "Module: Elytra",
   "item.vaultfall.modulo_speed": "Module: Speed",
   "item.vaultfall.modulo_kb_resistance": "Module: Knockback Resistance",
+  "item.vaultfall.modulo_super_salto": "Module: Super Jump",
+  "item.vaultfall.modulo_doble_salto": "Module: Double Jump",
 
   "tooltip.vaultfall.modulo_vision_nocturna_line1": "Optimizes optical sensors with Selethilite",
   "tooltip.vaultfall.modulo_vision_nocturna_line2": "Grants the infinite Night Vision effect",
@@ -79,6 +81,19 @@
   "tooltip.vaultfall.modulo_kb_resistance_line2": "Provides immense density to the wearer",
   "tooltip.vaultfall.modulo_kb_resistance_line3": "» Negates some external knockback forces",
   "tooltip.vaultfall.modulo_kb_resistance_line4": "Fixed integration in the Exo-Legs Frame ",
+
+  "tooltip.vaultfall.modulo_super_salto_line1": "Integrated pneumatic propulsion cylinders",
+  "tooltip.vaultfall.modulo_super_salto_line2": "Stores kinetic energy for massive leaps",
+  "tooltip.vaultfall.modulo_super_salto_line3": "» Crouch to charge the pneumatic system",
+  "tooltip.vaultfall.modulo_super_salto_line4": "  and jump to launch high into the air",
+  "tooltip.vaultfall.modulo_super_salto_line5": "Cooldown period between each launch: 3 s",
+  "tooltip.vaultfall.modulo_super_salto_line6": "Fixed integration in the Exo-Boots Frame ",
+
+  "tooltip.vaultfall.modulo_doble_salto_line1": "Secondary mid-air kinetic burst thrusters",
+  "tooltip.vaultfall.modulo_doble_salto_line2": "Allows a secondary jump while in mid-air",
+  "tooltip.vaultfall.modulo_doble_salto_line3": "» Press jump again while airborne to fire",
+  "tooltip.vaultfall.modulo_doble_salto_line4": "  a secondary upward directional thrust",
+  "tooltip.vaultfall.modulo_doble_salto_line5": "Fixed integration in the Exo-Boots Frame ",
 
   "tooltip.vaultfall.exo_slots": "§8Module Slots: [0/1]",
   "tooltip.vaultfall.exo_piece.modules": "Module slots: ",

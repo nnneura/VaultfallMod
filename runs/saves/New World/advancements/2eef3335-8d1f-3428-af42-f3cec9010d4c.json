@@ -29,12 +29,6 @@
     },
     "done": true
   },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2026-06-01 16:41:00 -0600"
-    },
-    "done": false
-  },
   "vaultfall:recipes/misc/propulsor": {
     "criteria": {
       "has_celula_energia": "2026-06-01 16:40:59 -0600"
@@ -46,6 +40,12 @@
       "crafting_table": "2026-06-01 16:40:59 -0600"
     },
     "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-06-01 16:41:00 -0600"
+    },
+    "done": false
   },
   "DataVersion": 3955
 }

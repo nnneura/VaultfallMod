@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-05T00:36:23.3430013	Vaultfall/Model Definitions
+// 1.21.1	2026-06-05T23:26:19.0968068	Vaultfall/Model Definitions
 274ff13ce3b36b97c99a042ba54602ab865cd278 assets\vaultfall\models\item\reinforced_steel_block.json
 2fdbcc2de4909c28acf34406cbc4522189f02b04 assets\vaultfall\models\item\celula_energia.json
 12e0d5a2b82853bf03dcecad970e2a8c6aad1585 assets\vaultfall\models\item\rusty_reinforced_steel_block.json
@@ -25,6 +25,7 @@ bb70cfb92366da26316d7b558319c7d645e6dad4 assets\vaultfall\models\item\selethilit
 e2b55888bb5afa8514f3fb1de451c6aa3ca8959a assets\vaultfall\models\item\engranaje.json
 8a78ab7aa2173becc2f3afac9e6bf988355d63bf assets\vaultfall\blockstates\rusty_reinforced_steel_block.json
 12b47800e3fcaaceb25557836b34c032ba7cf707 assets\vaultfall\models\item\barra_acero.json
+441760bc911f40fe9c5dbbd99a28aae6d4e673cc assets\vaultfall\models\item\modulo_super_salto.json
 569fa5d05d10677e1e561f75c8abe516b9924e0b assets\vaultfall\models\item\modulo_respiracion.json
 2b004a4dc3ca728e4c9ebd8ae33629dac7ae306a assets\vaultfall\blockstates\lampara_selethilite.json
 7845af2223bd0d1beec78f0e454392a7fe3e9cd5 assets\vaultfall\blockstates\selethilite_block.json
@@ -41,9 +42,10 @@ b6334ef133a2c2f84264627be2b9b2cd21f863d7 assets\vaultfall\models\item\mango_acer
 934c016cfbae0888fe835b8a68236404e3ded414 assets\vaultfall\models\item\selethilite_upgrade_component.json
 d530dc9ef6a903c86374d5edcbccd4760887d450 assets\vaultfall\models\item\rejilla_acero.json
 d3f182c2a11c278356ef654b56ef18f44b75cc4d assets\vaultfall\models\item\nucleo_propulsion.json
+efa3ec6d2486893442076e034e01d1ab58192f71 assets\vaultfall\models\item\modulo_doble_salto.json
 968dab5cb5e7d177c6478a016d45b15e512e281f assets\vaultfall\models\item\hoja_acero.json
-c528d86ad657a67c5f2f86c6497b8abfccdd1588 assets\vaultfall\blockstates\deepslate_selethilite_ore.json
 afcbb6a5f7e4dda0436897e3ee4b020eec144590 assets\vaultfall\blockstates\viga_acero.json
+c528d86ad657a67c5f2f86c6497b8abfccdd1588 assets\vaultfall\blockstates\deepslate_selethilite_ore.json
 b4ff1b6fe09e938f0f1c9d1071f55945ab87f36d assets\vaultfall\models\item\deepslate_selethilite_ore.json
 752d7ad0469644962b7f0f1c965d8ff8fa24c96c assets\vaultfall\models\item\modulo_speed.json
 02e02f3dd860912d4353ad2751b6b9429c5f60a0 assets\vaultfall\models\item\lampara_selethilite.json

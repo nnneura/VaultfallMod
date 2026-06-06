@@ -159,6 +159,31 @@ public class ModItems {
             ))
     );
 
+    public static final Item MODULO_SUPER_SALTO = registerItem("modulo_super_salto",
+            new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).component(DataComponentTypes.LORE,
+                    new LoreComponent(List.of(
+                            Text.translatable("tooltip.vaultfall.modulo_super_salto_line1").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_super_salto_line2").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_super_salto_line3").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_super_salto_line4").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_super_salto_line5").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_super_salto_line6").formatted(Formatting.DARK_PURPLE)
+                    ))
+            ))
+    );
+
+    public static final Item MODULO_DOBLE_SALTO = registerItem("modulo_doble_salto",
+            new Item(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON).component(DataComponentTypes.LORE,
+                    new LoreComponent(List.of(
+                            Text.translatable("tooltip.vaultfall.modulo_doble_salto_line1").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_doble_salto_line2").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_doble_salto_line3").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_doble_salto_line4").formatted(Formatting.DARK_GRAY),
+                            Text.translatable("tooltip.vaultfall.modulo_doble_salto_line5").formatted(Formatting.DARK_PURPLE)
+                    ))
+            ))
+    );
+
 
     public static final Item ESPADA_MECANICA_BASE = registerItem("espada_mecanica_base",
             new CustomSwordItem(

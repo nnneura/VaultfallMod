@@ -1,7 +1,3 @@
-/enchant Player10 minecraft:sharpness
-/enchant Player10 minecraft:sharpness 4
-/enchant Player863 minecraft:sharpness 4
-/enchant Player526 minecraft:sharpness 4
 /enchant Player769 minecraft:sharpness 4
 /enchant Player769 minecraft:sharpness 5
 /enchant Player769 minecraft:sweeping_edge 3
@@ -48,3 +44,7 @@
 /difficulty easy
 /damage Player741 8 minecraft:arrow
 /kill Player741
+/difficulty peaceful
+/time set day
+/kill
+/effect give Player389 minecraft:regeneration infinite 20

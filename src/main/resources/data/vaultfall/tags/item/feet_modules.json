@@ -1,5 +1,7 @@
 {
   "replace": false,
   "values": [
+    "vaultfall:modulo_doble_salto",
+    "vaultfall:modulo_super_salto"
   ]
 }
